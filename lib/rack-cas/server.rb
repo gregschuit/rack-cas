@@ -19,7 +19,7 @@ module RackCAS
 
     def logout_url(params = {})
       @url.dup.tap do |url|
-        url.append_path('logout')
+        url.append_path('prelogout')
         url.add_params(params) unless params.empty?
       end
     end
